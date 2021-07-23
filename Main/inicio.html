@@ -17,7 +17,7 @@
         <div class="col-5 col-md-5 col-sm-5 text-center"><input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search"></div>
         <div class="col-2 col-md-2 col-sm-2 text-left"><button type="button" class="btn btn-outline-info">Buscar</button></div> 
         <div class="col-5 col-md-5 col-sm-5 text-center">
-            
+          <form method="POST" name="form-work" action="almacen.php">  
             <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalCenter">
                 Añadir Poliza
               </button>
@@ -33,19 +33,20 @@
                     </div>
                     <div class="modal-body">
                         <div class="row">
-                             <div class="col"><input class="form-control mr-sm-2" type="text" placeholder="Nombre" aria-label="Nombre"></div>
-                             <div class="col"><input class="form-control mr-sm-2" type="date" placeholder="" aria-label="Fecha"></div>
-                             <div class="col"><input class="form-control mr-sm-2" type="file" placeholder="" aria-label="PDF"></div>
+                             <div class="col"><input class="form-control mr-sm-2" name="nombre" type="text" placeholder="Nombre" aria-label="Nombre"></div>
+                             <div class="col"><input class="form-control mr-sm-2" name="fecha" type="date" placeholder="" aria-label="fecha"></div>
+                             <div class="col"><input class="form-control mr-sm-2" name="pdf" type="file" placeholder="" aria-label="pdf"></div>
 
                         </div>
                     </div>
                     <div class="modal-footer">
-                      <button type="button" class="btn btn-primary">Aceptar</button>
+                      <button type="submit" class="btn btn-primary">Aceptar</button>
                     </div>
                   </div>
                 </div>
               </div>
         </div>
+      </form>
     <div class="row d-flex align-items-center" style="background-color: darkgray;">
         <div class="col-1 col-md-1 col-sm-1 text-center">Id</div>
         <div class="col-3 col-md-3 col-sm-3 text-center">Nombre</div>
@@ -69,6 +70,5 @@
 </div>
 
     </body>
-        
 
 </html>
