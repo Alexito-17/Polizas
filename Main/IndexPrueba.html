@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <title>Formulario de Registro</title>
+        <link rel="stylesheet" href="estilo.css">
+    </head>
+    <body>
+        <form action="insertar.php" class="form-register" method="POST" enctype="multipart/form-data">
+            <h1 class="form__title">Introducir Información</h1>
+            <div class="container--flex">
+                <label for="" class="form__label">Nombre</label>
+                <input type="text" name="nombre" class="form__input" required>
+            </div>
+            <div class="container--flex">
+                <label for="" class="form__label">Apellidos</label>
+                <input type="text" name="apellido" class="form__input" required>
+            </div>
+            <div class="container--flex">
+                <label for="" class="form__label">Fecha</label>
+                <input type="date" name="fecha" class="form__input" required>
+            </div>
+            <input type="file" name="archivo" class="form__file" required>
+            <input type="submit" class="form__submit">
+        </form>
+    </body>
+</html>

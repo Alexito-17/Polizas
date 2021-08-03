@@ -1,0 +1,64 @@
+body
+{
+    margin: 0;
+    font-family: sans-serif;
+    background-color: #ddd;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 100vh;
+}
+
+.form-register
+{
+    width: 95%;
+    max-width: 500px;
+    background: white;
+    padding: 20px;
+}
+
+.form__title
+{
+    margin-top: 0%;
+    font-size: 1.7;
+    text-align: center;
+}
+.form__lable, .form__input
+{
+    display: block;
+}
+
+.form__lable
+{
+    width: 30%;
+}
+.form__input
+{
+    width: 70%;
+}
+
+.container--flex
+{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.form__file
+{
+    font-size: 1em;
+    margin: 10px 0;
+    width: 100%;
+}
+
+.form__submit
+{
+    width: 100%;
+    background: yellowgreen;
+    padding: 10px;
+    border: none;
+    color: white;
+    font-size: 1em;
+    margin-top: 10px;
+    cursor: pointer;
+}
