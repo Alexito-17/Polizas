@@ -62,3 +62,17 @@ body
     margin-top: 10px;
     cursor: pointer;
 }
+table
+{
+    border-collapse: collapse;
+    width: 75%;
+}
+th, td, tr
+{
+    text-align: center;
+    padding: 20px;
+}
+tr:nth-child(even)
+{
+    background-color: #F2F2F2;
+}
