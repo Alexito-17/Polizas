@@ -1,6 +1,8 @@
 <?php
     $conexion = mysqli_connect("localhost", "root", "yes", "registrodepolizas");
-    $consulta = "SELECT * FROM registrodepolizas";
+    $consulta = "SELECT idPolizas, Nombre, Fechai, Fechav, Pdf, DATEDIFF(Fechav, CURDATE()) as 'Dias'
+    FROM registrodepolizas";
+    
     $result = mysqli_query($conexion, $consulta);
 ?>
 
@@ -19,7 +21,16 @@
     </head> 
     <div class="row d-flex">
       <div class="col-12 col-md-12 col-sm-12 text-center" ><h1>Polizas</h1></div>
-        <div class="col-5 col-md-5 col-sm-5 text-center"><input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search"></div>
+
+
+
+
+      <!--Aquí va mi buscador-->
+    <form method="POST" action="inicio.php">
+    <div></div>
+    </form>
+      <div class="col-5 col-md-5 col-sm-5 text-center"><input class="form-control mr-sm-2" type="text" placeholder="Search" id="buscar" name="buscar" aria-label="Search"></div>
+
         <div class="col-2 col-md-2 col-sm-2 text-left"><button type="button" class="btn btn-outline-info">Buscar</button></div> 
         <div class="col-5 col-md-5 col-sm-5 text-center">
           <!--Con esto abro mi Modal-->
@@ -88,8 +99,8 @@
               echo "<td align='center'><h4>" . $colum['Nombre']. "</h4></td>";
               echo "<td align='center'><h4>" . $colum['Fechai']. "</h4></td>";
               echo "<td align='center'><h4>" . $colum['Fechav']. "</h4></td>";
-              echo "<td align='center'><h4>" . $colum['Pdf']. "</h4></td>";
-              
+              echo "<td align='center'><h4> <a href=".$colum['Pdf'].">" . substr($colum['Pdf'],9). "</a></h4></td>";
+              echo "<td align='center'><h4>" . $colum['Dias']. "</h4></td>";
           } 
             }
           mysqli_close($conexion);
@@ -125,6 +136,7 @@
         </ul>
       </nav>
 </div>
-
+          
     -->
+          
 </html>
