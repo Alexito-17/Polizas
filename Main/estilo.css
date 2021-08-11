@@ -1,3 +1,4 @@
+/*
 body
 {
     margin: 0;
@@ -16,18 +17,18 @@ body
     background: white;
     padding: 20px;
 }
-
+*/
 .form__title
 {
     margin-top: 0%;
     font-size: 1.7;
     text-align: center;
 }
-.form__lable, .form__input
+.form__lable
 {
     display: block;
 }
-
+/*
 .form__lable
 {
     width: 30%;
@@ -50,29 +51,5 @@ body
     margin: 10px 0;
     width: 100%;
 }
+*/
 
-.form__submit
-{
-    width: 100%;
-    background: yellowgreen;
-    padding: 10px;
-    border: none;
-    color: white;
-    font-size: 1em;
-    margin-top: 10px;
-    cursor: pointer;
-}
-table
-{
-    border-collapse: collapse;
-    width: 75%;
-}
-th, td, tr
-{
-    text-align: center;
-    padding: 20px;
-}
-tr:nth-child(even)
-{
-    background-color: #F2F2F2;
-}
