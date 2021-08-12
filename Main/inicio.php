@@ -110,6 +110,7 @@
         ?>
   </tbody>
 </table>
+
     <!--Modal de eliminar-->
         <!-- Modal Apertura-->
         <div class="modal fade" id="eliminar" tabindex="-1" role="dialog" aria-labelledby="modelTitleId" aria-hidden="true">
@@ -125,7 +126,7 @@
                   <input type="hidden" name="idPolizas" id="delete_id">
                   <div class="modal-footer">
                     <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancelar</button>
-                    <button type="button" class="btn btn-primary">Aceptar</button>
+                    <button type="submit" class="btn btn-primary">Aceptar</button>
                 </form>
               </div>
             </div>

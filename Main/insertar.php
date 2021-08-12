@@ -16,7 +16,7 @@ $subir_archivo = move_uploaded_file($_FILES["archivo"]["tmp_name"], $ruta);
         $resultado = mysqli_query($conexion, $insertarSQL);
             if($resultado)
             {
-                echo "<script>alert('el informe se ha enviado correctamente'); window.location= 'indexPrueba.html'</script>";
+                echo "<script>alert('La poliza se ha enviado correctamente'); window.location= 'inicio.php'</script>";
             }else
             {
                 printf("Errormessage: %s\n", mysqli_error($conexion));

@@ -1,16 +1,16 @@
 <?php
-include_once("conexion.php");
+include("conexion.php");
 $idPolizas= $_POST["idPolizas"];
 
-$sentencia = $base_de_datos->prepare("DELETE FROM registrodepolizas WHERE idPolizas=:idPolizas;");
-$sentencia->bindParam(':idPolizas', $idPolizas);
+$sentencia = "DELETE FROM registrodepolizas WHERE idPolizas=".$idPolizas.";";
 
-if($sentencia->execute())
+$result = mysqli_query($Conect, $sentencia);
+if($result)
 {
-return header("Location:inicio.php");
-}
-else
+  echo "<script>alert('La poliza fue eliminada con exito'); window.location= 'indexPrueba.html'</script>";
+}else
 {
-return "error";
+  echo "No jalo";
 }
+
 ?>
